@@ -1,0 +1,130 @@
+@import url("https://www.project-helix.page/style.css");
+
+
+footer div.plain {
+    background-color: #333333;
+    padding: 20px 20px;
+    color: #888888;
+    text-align: left;
+    font-size: 14px;
+    line-height: 2em;
+}
+
+footer li>p {
+    font-size: 1em;
+    color: white;
+    font-weight: 600;
+    
+}
+
+footer ul {
+    list-style: none;
+    display: inline-block;
+    padding-inline-start: 0px;
+}
+
+
+footer div.section:nth-child(1)>ul {
+    display: grid;
+    grid-template-areas: "a b" 
+                         "c d";
+    
+}
+
+footer div.section:nth-child(2) {
+    margin-top: 2em;
+    text-align: center;    
+}
+
+.header {
+    position: relative;
+    height: inherit;
+    width: 90vw;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 5%;
+}
+
+header {
+    font-size: 1em;
+}
+
+header .plain {
+    position: relative;
+    background-color: white;
+    color: black;
+    z-index: inherit;
+    overflow: hidden;
+    padding: 10px 20px;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+
+header img {
+    height: 1em;
+    padding-right: 5px;
+    padding-left: 2
+}
+
+header p {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin: 0;
+    display: inline-block;
+    line-height: 1.5em;
+}
+
+header p:nth-child(2) {
+    display: block;
+    float: none;
+}
+
+header p:nth-child(2) a {
+    display: inline-block;
+}
+
+header a:any-link{
+    color: black;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+header .section:nth-child(2) {
+    display: block;
+    position: relative;
+    width: 100vw;
+    height: inherit;
+    top: inherit;
+    left: inherit;
+    background-color: white;
+    padding: 10px 20px;
+    box-sizing: border-box;
+
+}
+
+header .section:nth-child(2)>p {
+    display: block;
+    float: none;
+    font-size: inherit;
+    margin-top: inherit;
+}
+
+header .section:nth-child(2) ul {
+    font-size: 2em;
+    list-style: none;
+}
+
+
+
+@media (min-width:600px) {
+    
+    footer div.section:nth-child(1)>ul {
+        grid-template-areas: "a b c d"
+    }
+
+}
