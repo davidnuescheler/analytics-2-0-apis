@@ -1,15 +1,16 @@
 Adobe I/O
-- APIs
-- Authentication
-- Open Source
-- Blog
+- [APIs](https://www.adobe.io/apis.html)
+- [Authentication](https://www.adobe.io/authentication.html)
+- [Open Source](https://www.adobe.io/open.html)
+- [Blog](https://medium.com/adobetech)
+- [Console](https://console.adobe.io/)
 
 ---
 
 ![Adobe Analytics](https://www.adobe.io/content/udp/en/apis/experiencecloud/analytics/_jcr_content/root/udpNav/image/file)
 ADOBE ANALYTICS
-- Documentation
-- API Reference
+- [Documentation](/README.html)
+- [API Reference](https://www.adobe.io/apis/experiencecloud/analytics/api-reference.html)
 
 ---
 
