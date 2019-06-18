@@ -58,9 +58,115 @@ header .plain {
     color: black;
     z-index: inherit;
     overflow: hidden;
-    padding: 10px 20px;
+    padding: 0;
     width: 100vw;
     box-sizing: border-box;
+}
+
+header .section:nth-child(1) {
+    display: grid;
+    grid-template-areas: "a b";
+    height: 60px;
+}
+
+header .section:nth-child(1) p {
+    grid-area: a;
+    align-self: center;
+    margin-left: 20px;
+
+}
+
+header .section:nth-child(1) ul {
+    grid-area: b;
+    display: inline-block;
+    line-height: 1.5em;
+    margin: 0px;
+    align-self: center;
+}
+
+header .section:nth-child(1) ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 10px;
+    padding: 0;  
+}
+
+header .section:nth-child(1) ul li a:any-link {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.5em;
+}
+
+header .section:nth-child(1) ul li a:any-link[href*="console"] {
+    background-color: #0e6de0;
+    color: white;
+    border-radius: 20px;
+    padding: 3px 10px;
+}
+
+
+
+header .section:nth-child(2) {
+    display: grid;
+    grid-template-areas: "a b";
+    padding: 10px 0;
+    position: relative;
+    width: 100vw;
+    height: inherit;
+    top: inherit;
+    left: inherit;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #eee;
+}
+
+header .section:nth-child(2) p {
+    grid-area: a;
+    align-self: center;
+    margin-left: 20px;
+    display: block;
+    float: none;
+    font-size: inherit;
+    margin-top: inherit;
+}
+
+header .section:nth-child(2) ul {
+    grid-area: b;
+    font-size: inherit;
+    margin: 0;
+}
+
+header .section:nth-child(2) ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 10px;
+    padding: 5px;
+    background-color: #dddddd;  
+}
+header .section:nth-child(2) ul li a:any-link {
+    font-weight: 700;
+    font-size: 0.9rem;
+    line-height: 1.5em;
+}
+
+header .section:nth-child(3) {
+    padding: 10px 0;
+    position: fixed;
+    width: 30vw;
+    height: inherit;
+    top: inherit;
+    left: inherit;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #eee;
+    font-size: 1em;
+    overflow: scroll;
+}
+
+header .section:nth-child(3) ul li a:any-link {
+    font-weight: 700;
+    font-size: 0.9rem;
+    line-height: 1.5em;
 }
 
 
@@ -76,6 +182,7 @@ header p {
     margin: 0;
     display: inline-block;
     line-height: 1.5em;
+    
 }
 
 header p:nth-child(2) {
@@ -89,34 +196,7 @@ header p:nth-child(2) a {
 
 header a:any-link{
     color: black;
-    font-size: 1.5em;
     text-decoration: none;
-    font-weight: 100;
-}
-
-header .section:nth-child(2) {
-    display: block;
-    position: relative;
-    width: 100vw;
-    height: inherit;
-    top: inherit;
-    left: inherit;
-    background-color: white;
-    padding: 10px 20px;
-    box-sizing: border-box;
-
-}
-
-header .section:nth-child(2)>p {
-    display: block;
-    float: none;
-    font-size: inherit;
-    margin-top: inherit;
-}
-
-header .section:nth-child(2) ul {
-    font-size: 2em;
-    list-style: none;
 }
 
 

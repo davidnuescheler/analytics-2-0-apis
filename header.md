@@ -1,5 +1,5 @@
 Adobe I/O
-- [APIs](https://www.adobe.io/apis.html)
+- [APIs](https://www.adobe.io/apis.html) 
 - [Authentication](https://www.adobe.io/authentication.html)
 - [Open Source](https://www.adobe.io/open.html)
 - [Blog](https://medium.com/adobetech)
