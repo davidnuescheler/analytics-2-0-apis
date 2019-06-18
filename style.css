@@ -143,30 +143,73 @@ header .section:nth-child(2) ul li {
     padding: 5px;
     background-color: #dddddd;  
 }
+
 header .section:nth-child(2) ul li a:any-link {
     font-weight: 700;
     font-size: 0.9rem;
     line-height: 1.5em;
 }
 
+/* hide stuff */
+
 header .section:nth-child(3) {
-    padding: 10px 0;
-    position: fixed;
-    width: 30vw;
-    height: inherit;
-    top: inherit;
-    left: inherit;
-    margin: 0;
-    box-sizing: border-box;
-    background-color: #eee;
-    font-size: 1em;
-    overflow: scroll;
+    display: none;
+} 
+
+body>.section {
+    display: none;
 }
 
-header .section:nth-child(3) ul li a:any-link {
+footer {
+    display: none;
+}
+
+main {
+    display: grid;
+    grid-template-areas: "a" "b";
+    width: 90vw;
+    box-sizing: border-box;   
+}
+
+main .main {
+    grid-area: b;
+
+}
+
+main .toc {
+    grid-area: a;
+    padding: 10px 30px;
+    margin: 30px 10px;
+    box-sizing: border-box;
+    background-color: #0f69d620;
+    font-size: 1em;
+    border-radius: 10px;
+    width: 95vw;
+}
+
+main .toc ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+main .toc>ul>li {
     font-weight: 700;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #0f69d6;
+    border-collapse: collapse;
+}
+
+main .toc li li  {
+    font-weight: 500;
     font-size: 0.9rem;
-    line-height: 1.5em;
+    border-collapse: collapse;
+    border-top: 0.5px dashed #0f69d6;
+}
+
+
+main .toc ul li a:any-link {
+    line-height: 3.5em;
 }
 
 
@@ -199,6 +242,25 @@ header a:any-link{
     text-decoration: none;
 }
 
+.toc a:any-link {
+    color: #0f69d6;
+    text-decoration: none;
+}
+
+@media (min-width: 900px) {
+    .default, footer .section {
+        width: inherit;
+    }
+    main {
+        grid-template-areas: "a b";
+    }
+
+    main .toc {
+        width: 250px;
+    }
+
+ 
+}
 
 
 @media (min-width:600px) {
@@ -206,5 +268,6 @@ header a:any-link{
     footer div.section:nth-child(1)>ul {
         grid-template-areas: "a b c d"
     }
+
 
 }
