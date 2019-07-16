@@ -7,11 +7,10 @@
 <script>
   window.onload = function() {
     scrani.onload();
-    const $sections = $(document).find('body>div.section');
+    const $sections = $(document).find('body>main>div');
 
     $sections.wrapAll('<div class="main"></div>');
-    $(document).find('.main').wrap("<main></main>");
-    $('header .section:nth-child(3)').prependTo("main").addClass("toc");
+    $('header div:nth-child(3)').prependTo("main").addClass("toc");
     $('footer').show();
 
   }

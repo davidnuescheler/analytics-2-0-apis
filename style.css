@@ -24,14 +24,14 @@ footer ul {
 }
 
 
-footer div.section:nth-child(1)>ul {
+footer div:nth-child(1)>ul {
     display: grid;
     grid-template-areas: "a b" 
                          "c d";
     
 }
 
-footer div.section:nth-child(2) {
+footer div:nth-child(2) {
     margin-top: 2em;
     text-align: center;    
 }
@@ -63,20 +63,20 @@ header {
     box-sizing: border-box;
 }
 
-header .section:nth-child(1) {
+header div:nth-child(1) {
     display: grid;
     grid-template-areas: "a b";
     height: 60px;
 }
 
-header .section:nth-child(1) p {
+header div:nth-child(1) p {
     grid-area: a;
     align-self: center;
     margin-left: 20px;
 
 }
 
-header .section:nth-child(1) ul {
+header div:nth-child(1) ul {
     grid-area: b;
     display: inline-block;
     line-height: 1.5em;
@@ -84,20 +84,20 @@ header .section:nth-child(1) ul {
     align-self: center;
 }
 
-header .section:nth-child(1) ul li {
+header div:nth-child(1) ul li {
     display: inline-block;
     list-style-type: none;
     margin: 0 10px;
     padding: 0;  
 }
 
-header .section:nth-child(1) ul li a:any-link {
+header div:nth-child(1) ul li a:any-link {
     font-weight: 700;
     font-size: 1rem;
     line-height: 1.5em;
 }
 
-header .section:nth-child(1) ul li a:any-link[href*="console"] {
+header div:nth-child(1) ul li a:any-link[href*="console"] {
     background-color: #0e6de0;
     color: white;
     border-radius: 20px;
@@ -106,7 +106,7 @@ header .section:nth-child(1) ul li a:any-link[href*="console"] {
 
 
 
-header .section:nth-child(2) {
+header div:nth-child(2) {
     display: grid;
     grid-template-areas: "a b";
     padding: 10px 0;
@@ -120,7 +120,7 @@ header .section:nth-child(2) {
     background-color: #eee;
 }
 
-header .section:nth-child(2) p {
+header div:nth-child(2) p {
     grid-area: a;
     align-self: center;
     margin-left: 20px;
@@ -130,13 +130,13 @@ header .section:nth-child(2) p {
     margin-top: inherit;
 }
 
-header .section:nth-child(2) ul {
+header div:nth-child(2) ul {
     grid-area: b;
     font-size: inherit;
     margin: 0;
 }
 
-header .section:nth-child(2) ul li {
+header div:nth-child(2) ul li {
     display: inline-block;
     list-style-type: none;
     margin: 0 10px;
@@ -144,7 +144,7 @@ header .section:nth-child(2) ul li {
     background-color: #dddddd;  
 }
 
-header .section:nth-child(2) ul li a:any-link {
+header div:nth-child(2) ul li a:any-link {
     font-weight: 700;
     font-size: 0.9rem;
     line-height: 1.5em;
@@ -152,11 +152,11 @@ header .section:nth-child(2) ul li a:any-link {
 
 /* hide stuff */
 
-header .section:nth-child(3) {
+header div:nth-child(3) {
     display: none;
 } 
 
-body>.section {
+body>div {
     display: none;
 }
 
@@ -248,7 +248,7 @@ header a:any-link{
 }
 
 @media (min-width: 900px) {
-    .default, footer .section {
+    .default, footer div {
         width: inherit;
     }
     main {
@@ -265,7 +265,7 @@ header a:any-link{
 
 @media (min-width:600px) {
     
-    footer div.section:nth-child(1)>ul {
+    footer div:nth-child(1)>ul {
         grid-template-areas: "a b c d"
     }
 
