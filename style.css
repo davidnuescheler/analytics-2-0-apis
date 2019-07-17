@@ -67,13 +67,14 @@ header div:nth-child(1) {
     display: grid;
     grid-template-areas: "a b";
     height: 60px;
+    overflow: scroll;
+    white-space: nowrap;
 }
 
 header div:nth-child(1) p {
     grid-area: a;
     align-self: center;
     margin-left: 20px;
-
 }
 
 header div:nth-child(1) ul {
@@ -118,6 +119,8 @@ header div:nth-child(2) {
     margin: 0;
     box-sizing: border-box;
     background-color: #eee;
+    overflow: scroll;
+    white-space: nowrap;
 }
 
 header div:nth-child(2) p {
